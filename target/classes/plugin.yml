@@ -1,0 +1,19 @@
+name: ParticleBlocks
+version: '1.1'
+main: com.ashkiano.particleblocks.ParticleBlocks
+api-version: '1.16'
+author: AshKiano
+commands:
+  setparticle:
+    description: Sets the location for the particle effect
+    usage: /<command>
+  particlelist:
+    description: Lists all the particle effects in the world.
+    usage: /<command>
+  delparticle:
+    description: Deletes a particle effect by ID.
+    usage: /<command> <ID>
+permissions:
+  particleblocks.command:
+    description: Allows access to the particleblocks command.
+    default: op
