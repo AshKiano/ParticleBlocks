@@ -1,5 +1,5 @@
 name: ParticleBlocks
-version: '1.1'
+version: '1.2'
 main: com.ashkiano.particleblocks.ParticleBlocks
 api-version: '1.16'
 author: AshKiano

@@ -19,6 +19,8 @@ public class ParticleBlocks extends JavaPlugin implements TabCompleter {
 
         Metrics metrics = new Metrics(this, 19557);
 
+        this.getLogger().info("Thank you for using the ParticleBlocks plugin! If you enjoy using this plugin, please consider making a donation to support the development. You can donate at: https://donate.ashkiano.com");
+
         this.getCommand("setparticle").setTabCompleter(this);
         this.getCommand("getparticle");
         this.getCommand("particlelist").setExecutor(new ParticleListCommandExecutor(this));
