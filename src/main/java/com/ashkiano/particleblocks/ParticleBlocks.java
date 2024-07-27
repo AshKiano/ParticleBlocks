@@ -1,6 +1,7 @@
 package com.ashkiano.particleblocks;
 
 import org.bukkit.*;
+import org.bukkit.block.data.BlockData;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
@@ -187,6 +188,8 @@ public class ParticleBlocks extends JavaPlugin implements TabCompleter {
             World world = Bukkit.getWorld(worldName);
             Location loc = new Location(world, x, y, z);
             Particle particleType = Particle.valueOf(particleName);
+
+            BlockData blockData = loc.getBlock().getBlockData(); // Získání BlockData z lokace
 
             switch (effectName) {
                 case "explosion":
